@@ -44,13 +44,6 @@
 - [ ] 아키텍처 구조
 - [ ] ERD
 
-# 답변
-
-- requestDto에는 우선 공통적으로 받는 값들을 선언한다(이중에는 pg 타입도 포함). 그리고 객체를 받는 필드를 하나 선언하고 해당 필드의 타입은 여러 피쥐사가 받아야하는 각각의 dto가 공통으로 구현한 인터페이스를 타입으로한다. (다형성 활용) (혹은 union type 활용)
-- 응답값은 일반적인 api 반환값처럼 status, timestamp, result를 반환하고 result 내부에 메세지 값을 담아서 반환.
-
----
-
 ### 환경 설정과 Github에 대한 궁금증이 있다면! Issues에 등록해주시면 답변 드리겠습니다.
 
 - https://github.com/jinho-yoo-jack/wanted-preonboarding-challenge-backend-16/issues
