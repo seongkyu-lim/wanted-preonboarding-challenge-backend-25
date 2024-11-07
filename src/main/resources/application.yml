@@ -6,16 +6,15 @@ spring:
     check-template-location: true
     prefix: classpath:/templates/
     suffix: .html
-
 ---
 spring:
   config:
     activate:
       on-profile: dev
   datasource:
-    url: jdbc:mysql://localhost:13306/wanted_preonboarding?serverTimezone=UTC&characterEncoding=UTF-8
-    username: wanted
-    password: backend
+    url: jdbc:mysql://localhost:3306/wanted_preonboarding?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
   # JPA 설정
   jpa:
@@ -25,8 +24,8 @@ spring:
       hibernate:
         auto_quote_keyword: false
         globally_quoted_identifiers: false
-        format_sql: true     # 쿼리 로그 포맷 (정렬)
-        show_sql: true       # 쿼리 로그 출력
+        format_sql: true # 쿼리 로그 포맷 (정렬)
+        show_sql: true # 쿼리 로그 출력
 
 pg:
   tosspayments:
@@ -54,5 +53,5 @@ spring:
       hibernate:
         auto_quote_keyword: false
         globally_quoted_identifiers: false
-        format_sql: true     # 쿼리 로그 포맷 (정렬)
-        show_sql: true       # 쿼리 로그 출력
+        format_sql: true # 쿼리 로그 포맷 (정렬)
+        show_sql: true # 쿼리 로그 출력
