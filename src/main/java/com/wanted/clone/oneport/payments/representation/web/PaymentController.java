@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 @RequestMapping("/payment")
 public class PaymentController {
+
+    //adaptor에서는 usecase(interface, 명세서)를 사용하고, input port는 usecase 구현. 여기서는 PaymentRequestService.
     private final PaymentRequestUseCase paymentRequestUseCase;
 
     @GetMapping("/request")
